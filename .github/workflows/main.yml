@@ -21,3 +21,9 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
+
+version: 2
+authtoken: 2e8m39Vc7UrrGrp8zr8QpvPJLdt_6Fky9rGDFJB1wJSGrQDoz
+tunnels:
+ ardac_bot:
+  addr: http://localhost:80
